@@ -1,0 +1,10 @@
+appender:
+  console:
+    type: console
+    encoder:
+      pattern: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n"
+
+root:
+  level: debug
+  appenderRefs:
+    - ref: console
